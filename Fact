@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+int main( ) 
+{
+int i, j, prod1, prod2, term, s ; 
+s = 0 ; 
+for ( i = 1 ; i <= 3 ; i++ ) 
+{
+prod1 = 1 ; 
+for ( j = 1 ; j <= i ; j++ ) 
+prod1 = prod1 * j ; 
+prod2 = prod1 * j ; 
+term = prod1 * prod2 ; 
+s = s + term ; 
+}
+printf ( "sum of series=%f\n", s ) ; 
+return 0 ; 
+}
